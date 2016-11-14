@@ -26,6 +26,8 @@ SRC_URI = "git://git.yoctoproject.org/linux-yocto-4.12.git;name=machine;branch=$
 
 LINUX_VERSION ?= "4.12.20"
 
+SRC_URI += "file://drm.cfg"
+
 PV = "${LINUX_VERSION}+git${SRCPV}"
 
 KMETA = "kernel-meta"
